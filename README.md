@@ -1,16 +1,10 @@
 # TDD JavaScript, with Node and Jest #
 
-TDD JavaScript, the tests are here but the code is missing
-
 Install: 'npm install'
 
 Run: 'npm run test'
 
-There are 22 tests total. Right now, three pass, those are demonstration tests to show you how to do some test setup. 
-
-## Work them in this order: maths, stringy, songs, dates. ##
-
-Tests for:
+Code for:
 * Add two numbers
 * Multiply two numbers
 * Square a numbers
