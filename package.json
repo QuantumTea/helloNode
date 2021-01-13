@@ -1,0 +1,23 @@
+{
+  "name": "tdd-js",
+  "version": "1.0.0",
+  "description": "test-driven JavaScript",
+  "main": "maths.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alison Hawke",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BritishKoalaTea/tdd-js.git"
+  },
+  "dependencies": {},
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  }
+}
