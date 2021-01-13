@@ -13,6 +13,7 @@ function dayOfTheWeek(year, month, day) {
 
 function hasFridayThirteenth(year, month) {
     var testDate = new Date(year, month, 13);
+    // console.log("test date is " + testDate)
     if (testDate.getDay() === 5 )
         return true;
     else
