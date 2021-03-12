@@ -11,6 +11,12 @@ function dayOfTheWeek(year, month, day) {
     return testDate.getDay();
 }
 
+function dayNameOfTheWeek(year, month, day) { 
+    var testDate = new Date(year, month, day);
+    const options = { weekday: 'long' };
+    return testDate.toLocaleDateString('EN-gb', options);
+}
+
 function hasFridayThirteenth(year, month) {
     var testDate = new Date(year, month, 13);
     // console.log("test date is " + testDate)
@@ -34,6 +40,7 @@ function numberOfFriday13thsThisYear(year) {
 module.exports = {
     dayOfTheFirstOfMonth,
     dayOfTheWeek,
+    dayNameOfTheWeek,
     hasFridayThirteenth,
-   numberOfFriday13thsThisYear
+    numberOfFriday13thsThisYear
 };
