@@ -4,6 +4,14 @@ Install: 'npm install'
 
 Run: 'npm run test'
 
+There are 26 tests total, in 4 test suites. Right now, 3 tests pass, those are demonstration tests to show you how to do some test setup.
+
+To run just one test, use 'npm run test -t test/maths.test.js'
+
+To skip a test, put '.skip' after its describe ( 'describe.skip('some test') )
+
+Once you have a test working, figure out two ways to break it by changing the code (not the test)
+
 Code for:
 * Add two numbers
 * Multiply two numbers
