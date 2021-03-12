@@ -23,3 +23,4 @@ Code for:
 * What day of the week a month starts on
 * What day of the week a date is
 * Whether as given month/year has a Friday the Thirteenth
+* How many Friday 13th in a given year
