@@ -1,6 +1,7 @@
 function bottlesofbeeronthewall(bottles) {
     switch(bottles) {
         case 0:
+        case 'no':
         case 'zero':
             return "no bottles of beer on the wall, go to the store and buy some more"
           break;

@@ -10,16 +10,20 @@ describe('bottles of beer on the wall', () => {
         expect(songs.bottlesofbeeronthewall(1)).toContain('one bottle');
     });
 
-    it('should know to buy more beer', () => {
+    it('should know to buy more beer when it runs out', () => {
         expect(songs.bottlesofbeeronthewall(0)).toContain('go to the store and buy some more');
     });
 
-    it('should handle one as a string', () => {
+    it('should handle one bottle as a string', () => {
         expect(songs.bottlesofbeeronthewall('one')).toContain('one bottle of beer on the wall');
     });
 
-    it('should handle zero as a string', () => {
+    it('should handle zero bottles as a string', () => {
         expect(songs.bottlesofbeeronthewall('zero')).toContain('go to the store and buy some more');
+    });
+
+    it('should handle no bottles as input', () => {
+        expect(songs.bottlesofbeeronthewall('no')).toContain('go to the store and buy some more');
     });
 
     it('should handle all the bottles', () => {
