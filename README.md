@@ -4,7 +4,7 @@ Install: 'npm install'
 
 Run: 'npm run test'
 
-There are 29 tests total, in 4 test suites. Right now, 3 tests are demonstration tests to show you how to do some test setup.
+There are 31 tests total, in 4 test suites. Right now, 3 tests are demonstration tests to show you how to do some test setup.
 
 To run just one test, use 'npm run test -t test/maths.test.js'
 
@@ -20,6 +20,8 @@ Code for:
 * Concatenate three strings without spaces
 * Get the 13th letter in a given phrase
 * Get the Nth letter in a given phrase
+* Sing '10 bottles of beer on the wall'
+* Sing 'N bottles of beer on the wall'
 * For '99 bottles of beer on the wall,' handle the 2, 1, and 0 cases
 * For '99 bottles of beer on the wall,' handle the zero, one, and no cases
 * What day of the week a month starts on
