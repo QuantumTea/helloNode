@@ -6,6 +6,7 @@ function singTheBottlesOfBeerSong(bottles) {
     song = song + bottlesofbeeronthewall(loop) + "\n"
   }
   
+  console.log(song);
   return song;
 }
 
@@ -18,14 +19,14 @@ function bottlesofbeeronthewall(bottles) {
         case 0:
         case 'no':
         case 'zero':
-            return "no bottles of beer on the wall, go to the store and buy some more"
+            return "no bottles of beer on the wall, go to the store and buy some more."
           break;
         case 1:
         case 'one':
-            return "one bottle of beer on the wall"
+            return "one bottle of beer on the wall,"
           break;
         default:
-          return bottles + " bottles of beer on the wall"
+          return bottles + " bottles of beer on the wall,"
       }
 }
 
