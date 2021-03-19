@@ -2,10 +2,14 @@ function joinTwoStrings(firstString, secondString) {
     return firstString + secondString;
 }
 
-function joinThreeStrings(firstString, secondString, thirdString) {
+function joinThreeStringsWithoutSpaces(firstString, secondString, thirdString) {
     return firstString + " " 
            + secondString + " "
            + thirdString;
+}
+
+function getThe13thLetter(testString) {
+    return testString.charAt(12);
 }
 
 function getTheNthLetter(testString, n) {
@@ -14,6 +18,7 @@ function getTheNthLetter(testString, n) {
 
 module.exports = {
     joinTwoStrings,
-    joinThreeStrings,
+    joinThreeStringsWithoutSpaces,
+    getThe13thLetter,
     getTheNthLetter
 };
