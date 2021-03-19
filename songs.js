@@ -1,3 +1,18 @@
+function singTheBottlesOfBeerSong(bottles) {
+  let song = "";
+
+  for (loop = bottles; loop >= 0; loop --)
+  {
+    song = song + bottlesofbeeronthewall(loop) + "\n"
+  }
+  
+  return song;
+}
+
+function singTheFourBottlesOfBeerSong() {
+  return singTheBottlesOfBeerSong(4);
+}
+
 function bottlesofbeeronthewall(bottles) {
     switch(bottles) {
         case 0:
@@ -15,5 +30,7 @@ function bottlesofbeeronthewall(bottles) {
 }
 
 module.exports = {
-    bottlesofbeeronthewall
+  singTheBottlesOfBeerSong,
+  singTheFourBottlesOfBeerSong,
+  bottlesofbeeronthewall
 };

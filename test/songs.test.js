@@ -2,6 +2,23 @@ const songs = require('../songs.js');
 
 describe('bottles of beer on the wall', () => {
 
+    it('can loop through the song entirely, starting from ten bottles', () => {
+        let wholeSong = songs.singTheBottlesOfBeerSong(10);
+        expect(wholeSong).toContain('10 bottles of beer on the wall')
+        expect(wholeSong).not.toContain('11 bottles of beer on the wall')
+        expect(wholeSong).toContain('5 bottles of beer on the wall')
+        expect(wholeSong).toContain('no bottles of beer on the wall')
+        expect(wholeSong).toContain('go to the store and buy some more')
+    });
+       
+    it('can loop through the song starting at four bottles', () => {
+        var shortSong = songs.singTheFourBottlesOfBeerSong()
+        expect(shortSong).toContain('4 bottles of beer on the wall')
+        expect(shortSong).not.toContain('5 bottles of beer on the wall')
+        expect(shortSong).toContain('no bottles of beer on the wall')
+        expect(shortSong).toContain('go to the store and buy some more')
+    });
+
     it('should know the song can continue', () => {
         expect(songs.bottlesofbeeronthewall(2)).toContain('2 bottles of beer on the wall');
     });
