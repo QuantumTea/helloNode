@@ -14,7 +14,7 @@ function add(a, b) {
     return Math.pow(a, 3);
   }
 
-module.exports = {
+export default {
     add,
     multiply,
     square,

@@ -96,4 +96,7 @@ typings/
 !.vscode/extensions.json
 *.code-workspace
 
+# eslint #
+.eslintrc.*
+
 # End of https://www.gitignore.io/api/node,macos
