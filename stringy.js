@@ -16,7 +16,7 @@ function getTheNthLetter(testString, n) {
     return testString.charAt(n-1);
 }
 
-export default {
+module.exports = {
     joinTwoStrings,
     joinThreeStringsWithoutSpaces,
     getThe13thLetter,

@@ -30,7 +30,7 @@ function bottlesofbeeronthewall(bottles) {
       }
 }
 
-export default {
+module.exports = {
   singTheBottlesOfBeerSong,
   singTheFourBottlesOfBeerSong,
   bottlesofbeeronthewall
