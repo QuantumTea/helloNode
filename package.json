@@ -19,6 +19,7 @@
     "url": "https://github.com/BritishKoalaTea/tdd-js.git"
   },
   "dependencies": {
+    "full-icu": "^1.3.1",
     "node-fetch": "^2.6.1"
   },
   "jest": {
