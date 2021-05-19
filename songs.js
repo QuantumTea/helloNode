@@ -1,11 +1,10 @@
 function singTheBottlesOfBeerSong(bottles) {
   let song = "";
 
-  for (loop = bottles; loop >= 0; loop --)
-  {
-    song = song + bottlesofbeeronthewall(loop) + "\n"
+  for (loop = bottles; loop >= 0; loop--) {
+    song = song + bottlesofbeeronthewall(loop) + "\n";
   }
-  
+
   console.log(song);
   return song;
 }
@@ -15,23 +14,24 @@ function singTheFourBottlesOfBeerSong() {
 }
 
 function bottlesofbeeronthewall(bottles) {
-    switch(bottles) {
-        case 0:
-        case 'no':
-        case 'zero':
-            return "no bottles of beer on the wall, go to the store and buy some more."
-          break;
-        case 1:
-        case 'one':
-            return "one bottle of beer on the wall,"
-          break;
-        default:
-          return bottles + " bottles of beer on the wall,"
-      }
+  switch (bottles) {
+    case 0:
+    case "no":
+    case "zero":
+      return "no bottles of beer on the wall, go to the store and buy some more.";
+      break;
+    case 1:
+    case "one":
+    case "One":
+      return "one bottle of beer on the wall,";
+      break;
+    default:
+      return bottles + " bottles of beer on the wall,";
+  }
 }
 
 module.exports = {
   singTheBottlesOfBeerSong,
   singTheFourBottlesOfBeerSong,
-  bottlesofbeeronthewall
+  bottlesofbeeronthewall,
 };
