@@ -5,7 +5,7 @@ function singTheBottlesOfBeerSong(bottles) {
     song = song + bottlesofbeeronthewall(loop) + "\n";
   }
 
-  console.log(song);
+  //console.log(song);
   return song;
 }
 
