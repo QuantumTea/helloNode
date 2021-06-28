@@ -5,6 +5,10 @@ describe("bottles of beer on the wall", () => {
     var shortSong = songs.singTheFourBottlesOfBeerSong();
     expect(shortSong).toContain("4 bottles of beer on the wall");
     expect(shortSong).not.toContain("5 bottles of beer on the wall");
+  });
+
+  it("can end the song", () => {
+    var shortSong = songs.singTheBottlesOfBeerSong(0);
     expect(shortSong).toContain("no bottles of beer on the wall");
     expect(shortSong).toContain("go to the store and buy some more");
   });
