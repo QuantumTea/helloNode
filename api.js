@@ -4,22 +4,22 @@
 const fetch = require("node-fetch");
 
 async function getResponseCode(urlString) {
-  const statusCode = null;
-  const response = null;
+  var statusCode = null;
+  var response = null;
   try {
     response = await fetch("https://ghibliapi.herokuapp.com/films");
     statusCode = await response.status;
+    //console.log("Status code is " + statusCode);
   } catch (error) {
     console.log("Error is: " + error);
   }
 
-  console.log("Status code is " + statusCode);
   return statusCode.toString();
 }
 
 async function returnJSONfromAPI(titleString) {
-  const response = await fetch("https://ghibliapi.herokuapp.com/films");
-  const data = await response.json().then;
+  var response = await fetch("https://ghibliapi.herokuapp.com/films");
+  var data = await response.json().then;
   return data;
 }
 
