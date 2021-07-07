@@ -15,6 +15,7 @@ function singTheFourBottlesOfBeerSong() {
 
 function bottlesofbeeronthewall(bottles) {
   switch (bottles) {
+    // multiple cases go to the same line of code
     case 0:
     case "no":
     case "zero":
