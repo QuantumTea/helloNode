@@ -70,15 +70,3 @@ describe("Test for number of Friday 13th in a year", () => {
     expect(result).toEqual(3);
   });
 });
-
-describe("Test for day plus or minus days", () => {
-  test("January 1, 2000 plus 90 days is what", () => {
-    result = dateFunctions.datePlusMinus(2000, 0, 1, 90);
-    expect(result.toEqual(3));
-  });
-
-  test("January 1, 2000 minus 90 days is what", () => {
-    result = dateFunctions.datePlusMinus(2000, 0, 1, -90);
-    expect(result.toEqual(3));
-  });
-});

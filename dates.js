@@ -41,13 +41,10 @@ function numberOfFriday13thsThisYear(year) {
   return FridayThirteenths;
 }
 
-function datePlusMinus(year, month, day, offset) {}
-
 module.exports = {
   dayOfTheFirstOfMonth,
   dayOfTheWeek,
   dayNameOfTheWeek,
   hasFridayThirteenth,
-  numberOfFriday13thsThisYear,
-  datePlusMinus,
+  numberOfFriday13thsThisYear
 };
