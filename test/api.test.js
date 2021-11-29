@@ -1,6 +1,6 @@
 const apiFunctions = require("../api.js");
 
-describe("Basic API operations", () => {
+describe.skip("Basic API operations", () => {
   test("Can tell you what the HTTP response code was", () => {
     let statusCode = apiFunctions.getResponseCode();
     expect(statusCode).toContain(200);

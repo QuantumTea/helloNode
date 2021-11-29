@@ -18,7 +18,9 @@ function bottlesofbeeronthewall(bottles) {
     // multiple cases go to the same line of code
     case 0:
     case "no":
+    case "No":
     case "zero":
+    case "Zero":
       return "no bottles of beer on the wall, go to the store and buy some more.";
       break;
     case 1:
