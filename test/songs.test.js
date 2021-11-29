@@ -4,6 +4,7 @@ describe("bottles of beer on the wall", () => {
   it("can loop through the song starting at four bottles", () => {
     var shortSong = songs.singTheFourBottlesOfBeerSong();
     expect(shortSong).toContain("4 bottles of beer on the wall");
+    expect(shortSong).toContain("no bottles of beer on the wall");
     expect(shortSong).not.toContain("5 bottles of beer on the wall");
   });
 
@@ -11,6 +12,7 @@ describe("bottles of beer on the wall", () => {
     var shortSong = songs.singTheBottlesOfBeerSong(0);
     expect(shortSong).toContain("no bottles of beer on the wall");
     expect(shortSong).toContain("go to the store and buy some more");
+    expect(shortSong).not.toContain("1 bottle of beer on the wall");
   });
 
   it("only gets four bottles", () => {
@@ -72,8 +74,8 @@ describe("bottles of beer on the wall", () => {
     expect(songs.bottlesofbeeronthewall(169)).toContain(
       "169 bottles of beer on the wall"
     );
-    expect(songs.bottlesofbeeronthewall("one million")).toContain(
-      "one million bottles of beer on the wall"
+    expect(songs.bottlesofbeeronthewall("One MILLION")).toContain(
+      "One MILLION bottles of beer on the wall"
     );
   });
 });
