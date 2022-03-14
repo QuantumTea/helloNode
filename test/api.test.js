@@ -1,4 +1,4 @@
-const apiFunctions = require("../api.js");
+// const apiFunctions = require("../api.js");
 
 describe.skip("Basic API operations", () => {
   test("Can tell you what the HTTP response code was", () => {
