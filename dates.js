@@ -15,12 +15,9 @@ function dayNameOfTheWeek(year, month, day) {
   var testDate = new Date(year, month, day);
   const options = {
     weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
   };
   // does not use the German locale
-  console.log("German day: " + testDate.toLocaleDateString("de-DE", options));
+  // console.log("German day: " + testDate.toLocaleDateString("de-DE", options));
   return testDate.toLocaleDateString("en-GB", options);
 }
 
@@ -46,5 +43,5 @@ module.exports = {
   dayOfTheWeek,
   dayNameOfTheWeek,
   hasFridayThirteenth,
-  numberOfFriday13thsThisYear
+  numberOfFriday13thsThisYear,
 };
