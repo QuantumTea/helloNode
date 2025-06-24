@@ -16,8 +16,12 @@ function dayNameOfTheWeek(year, month, day) {
   const options = {
     weekday: "long",
   };
-  // does not use the German locale
-  // console.log("German day: " + testDate.toLocaleDateString("de-DE", options));
+  // will it use a locale? Apparently yes
+  console.log("German day: " + testDate.toLocaleDateString("de-DE", options) + 
+    "\n\French day: " + testDate.toLocaleDateString("fr-FR", options) +
+    "\n\Arabic day: " + testDate.toLocaleDateString("ar-EG", options) +
+    "\n\Russian day: " + testDate.toLocaleDateString("ru-RU", options) +
+    "\n\Hindi day:  " + testDate.toLocaleDateString("hi-IN", options));
   return testDate.toLocaleDateString("en-GB", options);
 }
 
